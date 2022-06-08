@@ -1,0 +1,19 @@
+step02
+
+Ex05Access.java => Getter 와 Setter
+
+캡슐화 (Capsulation)
+public 과 private의 차이
+
+- public : 외부에서 접근 하기위해 사용
+- private : 외부에 대해서 보호 할때 사용
+
+1. 접근 제한(Access Modifier)
+- public : 동일 class / 동일한 package / 외부 package
+- private : 동일 class
+- default(생략시) : 동일 package
+- protected : 동일 calss / package, 단 상속 관계일 경우 외부 package 접근 가능함
+
+2. 사용 가능 위치
+- 클래스 선언구 : public, default
+- 변수/생성자/메소드 선언구 : public protected, default, private

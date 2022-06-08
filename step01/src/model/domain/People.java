@@ -7,11 +7,12 @@ package model.domain;
 
 public class People {
 	// 멤버변수(필드)
-	String name;
-	int age;
+	// 캡슐화(Capsulation)
+	private String name;
+	private int age;
 	
 	// 생성자
-	People() {
+	public People() {
 		
 	}
 	
@@ -21,11 +22,23 @@ public class People {
 	}
 	
 	// getMethod
-	String getName() {
+	public String getName() {
 		return name;
 	}
 	
 	int getAge() {
 		return age;
+	}
+	
+	// setMethod
+	public void setAge(int age) {
+		if(age >= 0) {
+			this.age = age;			
+		} else {
+			System.out.println("입력한 값은 유효하지 않습니다.");
+		}
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 }
