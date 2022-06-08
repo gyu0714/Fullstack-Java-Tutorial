@@ -20,3 +20,8 @@ public 과 private의 차이
 2. 사용 가능 위치
 - 클래스 선언구 : public, default
 - 변수/생성자/메소드 선언구 : public protected, default, private
+
+3. Ex06Practice
+	- 메소드 생성
+	- 매개변수 값 비교
+	- 메소드 개발

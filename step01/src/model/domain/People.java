@@ -26,7 +26,7 @@ public class People {
 		return name;
 	}
 	
-	int getAge() {
+	public int getAge() {
 		return age;
 	}
 	
