@@ -9,7 +9,7 @@ public class Ex02People2 {
 	}
 	Ex02People2(){
 		this.name="디폴트생성자";
-		this.age=999999999;
+		this.age=28;
 	}
 	Ex02People2(String name){
 		this.name=name;

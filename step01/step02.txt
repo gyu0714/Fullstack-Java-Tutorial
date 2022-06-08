@@ -1,4 +1,7 @@
-step02
+[step02]
+
+Ex01,02 People => 객체 생성
+
 
 Ex05Access.java => Getter 와 Setter
 

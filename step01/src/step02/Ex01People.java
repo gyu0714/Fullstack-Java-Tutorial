@@ -14,7 +14,7 @@ public class Ex01People {
 		return age;
 	}
 	void print(){
-		System.out.println("jhhk");
+		System.out.println("test");
 	//	System.out.println(getAge());
 	}
 	public static void main(String[] args) {
