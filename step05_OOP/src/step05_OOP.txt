@@ -1,0 +1,30 @@
+step05_OOP
+
+[학습]
+API(Application Programming Interface)
+	- 라이브러리(Library)
+	- 프로그램 개발을 위해 제공되는 클래스 또는 인터페이스
+	- String, System, ...
+	- 주로 java.lang
+	
+1. Ex01LangPackage
+	- Object 클래스
+		- hashCode() : 객체의 주소값을 정수로 변환 및 반환
+		- toString() : 문자열로 된 객체의 정보를 반환
+	
+	- System 클래스
+		- gerProperty()
+		- gc() : garbage collector 쓰레기 수집기
+			메모리가 낭비될 떄 자동으로 호출 된다. 
+			
+	- String 클래스
+		- equals() : 문자열의 내용 비교
+		- charAt() : 지정 인덱스의 위치 문자를 반환
+		- length() : 문자열의 길이 반환
+		- toLowerCase(), toUpperCase() : 대소문자 변환
+		- subString : 지정 위치에서 또 다른 위치의 잘라낸 문자열 반환
+		- replace : 변경 대상 문자열 => 지정 문자열로 변경된 결과 반환
+		- trim : 문자열의 앞, 뒤 빈 공백 제거한 결과 반환
+		- split : 특정 구분자를 기준으로 분리된 문자열 결과 반환 - 배열 반환
+	
+	- StringBuilder
