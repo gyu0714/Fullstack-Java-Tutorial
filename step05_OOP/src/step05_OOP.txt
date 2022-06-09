@@ -89,7 +89,9 @@ API(Application Programming Interface)
 			
 		2. UpCasting : 자식 객체가 부모타입으로 형변환 하면서 생성되는 것
 		3. DownCasting : 부모타입으로 생성된 자식객체가 자신이ㅡ 타입으로 형변환 하는 것
-		
+		4. instanceof : 객체 타입 확인
+			- 문법 : 객체 instanceof 타입
+			- 결과 : boolean(true or false)
 		
 	
 			

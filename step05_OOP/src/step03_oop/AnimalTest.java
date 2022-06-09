@@ -43,11 +43,29 @@ class Eagle extends Animal{
 	
 	public void fly() {
 		System.out.println("Eagle Fly");
-	}
+	}	
 }
 
 
 public class AnimalTest {
+	// public void downCasting(aniamlArray)
+	// instanceof : 결과 boolean
+	public static void downCasting(Animal[] animalArray) {
+		for(int i = 0; i < animalArray.length; i++) {
+			Animal animal = animalArray[i];
+			
+			if(animal instanceof Human) {
+				((Human) animal).readBooks();
+			} else if (animal instanceof Tiger) {
+				((Tiger) animal).hunting();
+			} else if (animal instanceof Eagle) {
+				((Eagle) animal).fly();
+			} else {
+				System.out.println("error");
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		// 다형성
 		
@@ -75,6 +93,8 @@ public class AnimalTest {
 		for(Animal animal : animalArray) {
 			animal.move();
 		}
+		
+		downCasting(animalArray);
 		
 	}
 
