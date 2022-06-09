@@ -17,8 +17,8 @@ public class Ex01LangPackage {
 
 	public static void main(String[] args) {
 		// Object Class
-		Object obj1 = new Object();
-		Object obj2 = new Object();
+//		Object obj1 = new Object();
+//		Object obj2 = new Object();
 		
 //		System.out.println(obj1.toString());
 //		System.out.println(obj2);
@@ -42,7 +42,7 @@ public class Ex01LangPackage {
 		// String Class
 
 		// charAt
-		String str1 = "Java API";
+//		String str1 = "Java API";
 //		System.out.println(str1.charAt(8)); // 에러
 		
 		// length
@@ -59,12 +59,12 @@ public class Ex01LangPackage {
 //		System.out.println(str1.replace("Java", "자바"));
 		
 		// trim
-		String str2 = "   Java API   ";
+//		String str2 = "   Java API   ";
 //		System.out.println(str2);
 //		System.out.println(str2.trim());
 		
 		// split
-		String str3 = "Java API String Test";
+//		String str3 = "Java API String Test";
 //		System.out.println(str3.split(" "));
 //		
 //		for(String str : str3.split(" ")) {
@@ -72,18 +72,49 @@ public class Ex01LangPackage {
 //		}
 		
 		// StringBuilder
-		String str4 = "abc";
-		System.out.println(str4.hashCode());
-
-		str4 += "def";
-		System.out.println(str4.hashCode());
+//		String str4 = "abc";
+//		System.out.println(str4.hashCode());
+//
+//		str4 += "def";
+//		System.out.println(str4.hashCode());
+//		
+//		StringBuilder sb = new StringBuilder("abc");
+//		System.out.println(sb);
+//		
+//		sb.append("def");
+//		System.out.println(sb);
 		
-		StringBuilder sb = new StringBuilder("abc");
-		System.out.println(sb);
+		// Wrapper Class
+		// 명시적 Boxing
+//		Integer intgr1 = new Integer(1);
+//		System.out.println(intgr1.getClass());
 		
-		sb.append("def");
-		System.out.println(sb);
+		// 명시적 unBoxing
+//		System.out.println(intgr1.valueOf(1).getClass()); // 기본타입으로 변경
 		
+		// 기본타입이라 클래스 확인 불가
+//		int int1 = 1;
+		// System.out.println(int1.getClass());
+		
+		// 자동 박싱/언박싱
+//		Integer intgr2 = 2;
+//		System.out.println(intgr2.getClass());
+		
+//		int intgr3 = intgr2;
+//		System.out.println(intgr3);
+		
+		// parse
+//		System.out.println(Integer.parseInt("3"));
+//		System.out.println(Double.parseDouble("3"));
+//		System.out.println(Integer.parseInt("three"));
+		
+		// Math
+		System.out.println(Math.abs(-15)); // 15
+		
+		// ceil, floor, round
+		System.out.println(Math.ceil(3.4)); // 4
+		System.out.println(Math.floor(3.6)); // 3
+		System.out.println(Math.round(3.6)); // 4
 	}
 
 }

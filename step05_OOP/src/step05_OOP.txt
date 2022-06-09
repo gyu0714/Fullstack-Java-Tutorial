@@ -26,5 +26,16 @@ API(Application Programming Interface)
 		- replace : 변경 대상 문자열 => 지정 문자열로 변경된 결과 반환
 		- trim : 문자열의 앞, 뒤 빈 공백 제거한 결과 반환
 		- split : 특정 구분자를 기준으로 분리된 문자열 결과 반환 - 배열 반환
+		- StringBuilder
 	
-	- StringBuilder
+	- Wrapper 클래스 : 기본타입의 값을 갖는 객체 생성
+		- Boxing : 객체타입으로 변경
+		- unBoxing : 객체타입을 기본타입으로 변경
+		- getClass() : Class 타입 확인
+		- parse() : 문자열ㅇ르 기본타입으로 변환
+		- Math() : 수학적 계산을 위한 클래스
+			- abs : 절댓값
+			- ceil : 올림값
+			- floor : 내림값
+			- round : 반올림		
+	
