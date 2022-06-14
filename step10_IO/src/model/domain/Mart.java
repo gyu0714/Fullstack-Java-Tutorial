@@ -20,6 +20,6 @@ public class Mart implements Serializable {
 	private static final long serialVersionUID = -770636714088202018L;
 	private String name;
 	private String address;
-	private transient int contact;
+	private int contact;
 
 }
