@@ -47,6 +47,7 @@ public class LambdaTest {
 		// *** method2가 있을 때에는 에러 발생 -> 어떤 것을 수현하는지 모호,
 		// 형태가 달라도 애초에 발생할 수 있는 오류 방지하기위해 에러 발생
 		// 따라서, 함수형 인터페이스는 "하나의 메소드만 구현"
+		
 		LambdaInter3 li3;
 		li3 = (x, y) -> {
 			return x + y;

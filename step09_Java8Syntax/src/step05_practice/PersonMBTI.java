@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-import model.domain.Person;
-
 public class PersonMBTI {
 
 	public static void main(String[] args) {
@@ -44,9 +42,23 @@ public class PersonMBTI {
 		personList.add(myungyun);
 		
 		System.out.println(personList);
-		Stream<Person> personStream = personList.stream();
-		
-//		personList.stream()
-	}
+		// version 1		
+		personList.stream().forEach(v -> {
+			if(v.getMbti().contains("i") && v.getMbti().contains("j")) {
+				System.out.println(v);
+			}
+		});
 
+		// version 2
+//		personList.stream()
+//		.filter((v) -> v.getMbti().contains("i") &&
+//					v.getMbti().contains("j"))
+//		.forEach(v -> System.out.println(v));
+		
+		// version 3
+		// 정규표현식
+//		personList.stream().filter(v -> v.getMbti().matches("^i..j$")).forEach(System.out::println);
+		
+	}
 }
+

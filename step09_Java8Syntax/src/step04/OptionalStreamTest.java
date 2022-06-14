@@ -61,24 +61,25 @@ public class OptionalStreamTest {
 //				System.out.println(stream1);
 //				stream1.forEach(num -> System.out.println(num));
 				
-				// step02 중개 연산
-				// Filter : Stream 요소중 조건이 맞는 것을 선택
+			// step02 중개 연산
+			// Filter : Stream 요소중 조건이 맞는 것을 선택
 				List<String> arr2 = Arrays.asList("apple", "banana", "melon");
 				arr2.stream().filter(v -> v.contains("a"));
 				
-				// Map : Stream 내 요소가 특정 로직 수행 후 새로운 스트림 반환
+			// Map : Stream 내 요소가 특정 로직 수행 후 새로운 스트림 반환
 				List<Integer> arr3 = Arrays.asList(1,2,3);
 				arr3.stream().map(v -> v + 1);
 				
-				// Sorted : 정렬
+			// Sorted : 정렬
 				arr3.stream().sorted();
-				// 역순 정렬
+			
+			// 역순 정렬
 				arr3.stream().sorted(Comparator.reverseOrder());
 				
-				// step03 최종 연산
-				// count, min, max, sum
-				// foreach
-				// collect
+			// step03 최종 연산
+			// count, min, max, sum
+			// foreach
+			// collect
 				
 				List<Integer> arr4 = Arrays.asList(1, 2, 3, 3, 4, 5, 5);
 				System.out.println(arr4);

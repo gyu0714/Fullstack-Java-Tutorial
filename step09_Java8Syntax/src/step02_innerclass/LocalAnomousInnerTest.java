@@ -2,6 +2,7 @@ package step02_innerclass;
 
 class OutClass {
 	
+	// 전역변수
 	int outNumber = 100;
 	static int staticOutNumber = 200;
 	
@@ -37,8 +38,6 @@ class OutClass {
 	// 익명 클래스
 	Runnable runner = new Runnable() {
 		int localNumber = 10;
-		
-		
 		
 		@Override
 		public void run() {
