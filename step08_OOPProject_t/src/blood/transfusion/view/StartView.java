@@ -35,21 +35,21 @@ public class StartView {
 
 		System.out.println("===== 4. 존재하지 않는 프로젝트 검색 - 예외처리 =====");
 		controller.projectView("A+");
-//
-//		System.out.println();
+
+		System.out.println();
 //
 //		// 존재하는 프로젝트 수정
-//		System.out.println("===== 5. 존재하는 프로젝트 수정 및 확인 =====");
-//		controller.updateProject("A-", new Recipient("recipient5", "수혈5", 2, "F", "A-", "응급수술"));
-//		controller.projectView("A-");
-//
-//		System.out.println();
+		System.out.println("===== 5. 존재하는 프로젝트 수정 및 확인 =====");
+		controller.updateProject("A-", new Recipient("recipient5", "수혈5", 2, "F", "A-", "응급수술"));
+		controller.projectView("A-");
+
+		System.out.println();
 //
 //		// 존재하지 않는 프로젝트 수정 : 예외 발생
-//		System.out.println("===== 6. 존재하지 않는 프로잭트 수정 - 예외처리 확인용 =====");
-//		controller.updateProject("B-", new Recipient("recipient6", "수혈6", 22, "F", "B-", "질병"));
-//		
-//		System.out.println();
+		System.out.println("===== 6. 존재하지 않는 프로잭트 수정 - 예외처리 확인용 =====");
+		controller.updateProject("B-", new Recipient("recipient6", "수혈6", 22, "F", "B-", "질병"));
+		
+		System.out.println();
 //
 //		// 존재하는 프로젝트 삭제 및 삭제여부 확인
 //		System.out.println("===== 7. 존재하는 프로젝트 삭제 및 확인 =====");
