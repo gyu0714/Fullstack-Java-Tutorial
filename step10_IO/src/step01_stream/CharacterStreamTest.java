@@ -22,20 +22,18 @@ public class CharacterStreamTest {
 //		}
 		
 		// Reader
-		try {
-			FileReader fr = new FileReader("C:\\webfullstack/path.txt");
-			
-			try {
+//		FileReader fr = null;			
+		// try-with-resources
+			try(FileReader fr = new FileReader("CharacterStream.txt")) {
 				int data;
 				while((data = fr.read()) != -1) {
 					System.out.print((char)data);
 				}
 			fr.close();
-			} catch (IOException e) {
+			} catch (FileNotFoundException e) {
 				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			}catch (IOException e) {
+				e.printStackTrace();
 		}
 	}
 

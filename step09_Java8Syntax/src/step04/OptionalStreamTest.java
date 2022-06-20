@@ -55,7 +55,7 @@ public class OptionalStreamTest {
 			// Stream
 			// step01 Stream 생성
 				ArrayList<Integer> arr1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
-				System.out.println(arr1);
+//				System.out.println(arr1);
 				
 				Stream<Integer> stream1 = arr1.stream();
 //				System.out.println(stream1);
